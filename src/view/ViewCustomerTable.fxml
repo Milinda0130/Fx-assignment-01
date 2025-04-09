@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerController">
+   <children>
+      <ImageView fitHeight="446.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/viewcustomer.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblCustomer" layoutX="33.0" layoutY="67.0" opacity="0.81" prefHeight="303.0" prefWidth="531.0" style="-fx-background-color: #dfe6e9;">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="59.999969482421875" text="ID" />
+          <TableColumn fx:id="colname" prefWidth="96.66659545898438" text="Name" />
+            <TableColumn fx:id="colemail" prefWidth="102.666748046875" text="Email" />
+            <TableColumn fx:id="coladdress" prefWidth="85.3333740234375" text="Address" />
+            <TableColumn fx:id="colphone" prefWidth="88.0" text="Phone" />
+            <TableColumn fx:id="colsalary" prefWidth="100.6666259765625" text="Salary" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="7.0" opacity="0.61" prefHeight="49.0" prefWidth="491.0" style="-fx-background-color: black;" text="Customer Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="236.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnReload" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #eb3b5a;" text="Reload Table" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="48.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnAddCustomer" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #3867d6;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="419.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #778ca3;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

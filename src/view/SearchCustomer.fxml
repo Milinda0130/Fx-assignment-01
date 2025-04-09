@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchCustomerController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/searchcustomer.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="267.0" prefHeight="58.0" prefWidth="332.0" text="Search Customer Details" textFill="#271665">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" layoutX="286.0" layoutY="58.0" prefHeight="25.0" prefWidth="214.0" promptText="ID" />
+      <TextField fx:id="txtname" layoutX="286.0" layoutY="108.0" prefHeight="25.0" prefWidth="214.0" promptText="Name" />
+      <TextField fx:id="txtemail" layoutX="286.0" layoutY="155.0" prefHeight="25.0" prefWidth="214.0" promptText="Email" />
+      <TextField fx:id="txtaddress" layoutX="286.0" layoutY="200.0" prefHeight="25.0" prefWidth="214.0" promptText="Address" />
+      <TextField fx:id="txtphone" layoutX="286.0" layoutY="248.0" prefHeight="25.0" prefWidth="214.0" promptText="Phone" />
+      <TextField fx:id="txtsalary" layoutX="286.0" layoutY="295.0" prefHeight="25.0" prefWidth="214.0" promptText="Salary" />
+      <Button layoutX="359.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnSearchCustomer" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #eb3b5a;" text="Search Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2d3436;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="150.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #2d3436;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
