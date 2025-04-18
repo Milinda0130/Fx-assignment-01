@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="620.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="620.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customercontroller.AddCustomerController">
    <children>
       <ImageView fitHeight="424.0" fitWidth="283.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -38,5 +38,6 @@
       <TextField fx:id="txtaddress" layoutX="319.0" layoutY="199.0" prefHeight="25.0" prefWidth="257.0" promptText="Address" />
       <TextField fx:id="txtphone" layoutX="319.0" layoutY="244.0" prefHeight="25.0" prefWidth="257.0" promptText="Phone" />
       <TextField fx:id="txtsalary" layoutX="319.0" layoutY="289.0" prefHeight="25.0" prefWidth="257.0" promptText="Salary" />
+      <Button layoutX="67.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnItem" prefHeight="25.0" prefWidth="148.0" text="Item Details" />
    </children>
 </AnchorPane>

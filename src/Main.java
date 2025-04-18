@@ -14,7 +14,8 @@ launch();
     @Override
     public void start(Stage stage) throws Exception {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/AddCustomer.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("customerView/AddCustomer.fxml"))));
+
         stage.show();
     }
 }

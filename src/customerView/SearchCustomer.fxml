@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchCustomerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customercontroller.SearchCustomerController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="283.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,13 +20,13 @@
             <Font name="System Bold Italic" size="28.0" />
          </font>
       </Label>
-      <TextField fx:id="txtid" layoutX="286.0" layoutY="58.0" prefHeight="25.0" prefWidth="214.0" promptText="ID" />
-      <TextField fx:id="txtname" layoutX="286.0" layoutY="108.0" prefHeight="25.0" prefWidth="214.0" promptText="Name" />
-      <TextField fx:id="txtemail" layoutX="286.0" layoutY="155.0" prefHeight="25.0" prefWidth="214.0" promptText="Email" />
-      <TextField fx:id="txtaddress" layoutX="286.0" layoutY="200.0" prefHeight="25.0" prefWidth="214.0" promptText="Address" />
-      <TextField fx:id="txtphone" layoutX="286.0" layoutY="248.0" prefHeight="25.0" prefWidth="214.0" promptText="Phone" />
-      <TextField fx:id="txtsalary" layoutX="286.0" layoutY="295.0" prefHeight="25.0" prefWidth="214.0" promptText="Salary" />
-      <Button layoutX="359.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnSearchCustomer" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #eb3b5a;" text="Search Customer" textFill="WHITE">
+      <TextField fx:id="txtid" layoutX="316.0" layoutY="103.0" prefHeight="25.0" prefWidth="214.0" promptText="ID" />
+      <TextField fx:id="txtname" layoutX="316.0" layoutY="148.0" prefHeight="25.0" prefWidth="214.0" promptText="Name" />
+      <TextField fx:id="txtemail" layoutX="316.0" layoutY="193.0" prefHeight="25.0" prefWidth="214.0" promptText="Email" />
+      <TextField fx:id="txtaddress" layoutX="316.0" layoutY="238.0" prefHeight="25.0" prefWidth="214.0" promptText="Address" />
+      <TextField fx:id="txtphone" layoutX="316.0" layoutY="58.0" prefHeight="25.0" prefWidth="214.0" promptText="Phone" />
+      <TextField fx:id="txtsalary" layoutX="316.0" layoutY="284.0" prefHeight="25.0" prefWidth="214.0" promptText="Salary" />
+      <Button layoutX="301.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnSearchCustomer" prefHeight="44.0" prefWidth="244.0" style="-fx-background-color: #eb3b5a;" text="Search Customer By Phone Number" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>

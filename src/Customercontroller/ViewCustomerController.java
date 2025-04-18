@@ -1,6 +1,6 @@
-package controller;
+package Customercontroller;
 
-import db.DBConnection;
+import db.CustomerDBConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,11 +24,6 @@ public class ViewCustomerController {
 
     }
 
-    public void btnAddCustomer(ActionEvent actionEvent) {
-    }
-
-    public void btnSearch(ActionEvent actionEvent) {
-    }
 
     public void reloadTable(){
 
@@ -41,7 +36,7 @@ public class ViewCustomerController {
 
         ObservableList<Customer> customerObservableList = FXCollections.observableArrayList();
 
-       DBConnection.getInstance().getDBList().forEach(customer ->{
+       CustomerDBConnection.getInstance().getDBList().forEach(customer ->{
            customerObservableList.add(customer);
                }
 

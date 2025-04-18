@@ -5,11 +5,11 @@ import model.Customer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DBConnection {
+public class CustomerDBConnection {
 
-    private static DBConnection instance;
+    private static CustomerDBConnection instance;
     private List<Customer> customerList;
-private DBConnection(){
+private CustomerDBConnection(){
 
  customerList = new ArrayList<>();
 
@@ -19,8 +19,8 @@ private DBConnection(){
         return customerList;
     }
 
-    public static DBConnection getInstance(){
+    public static CustomerDBConnection getInstance(){
 
-   return instance==null?instance=new DBConnection():instance;
+   return instance==null?instance=new CustomerDBConnection():instance;
     }
 }
