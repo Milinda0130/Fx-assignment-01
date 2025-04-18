@@ -34,7 +34,8 @@ public class SearchCustomerController {
 else {
 
     new Alert(Alert.AlertType.WARNING,"This Number is Not Found").show();
-            }
+          clearData();
+  }
 
         }
 
@@ -42,6 +43,7 @@ else {
 
             CustomerDBConnection.getInstance().getDBList().remove(deleteCustomer);
             new Alert(Alert.AlertType.INFORMATION,"Delete Successfully").show();
+        clearData();
         }
 
     }
@@ -52,10 +54,11 @@ else {
 
         if (phone.isEmpty()) {
             new Alert(Alert.AlertType.WARNING, "Please input Phone Number to Search").show();
+            clearData();
             return;
         }
 
-        boolean trueNumber = false;
+        boolean truephone = false;
 
         for (Customer customer : CustomerDBConnection.getInstance().getDBList()) {
             if (customer.getPhone().equalsIgnoreCase(phone)) {
@@ -66,14 +69,16 @@ else {
                 customer.setEmail(txtemail.getText());
                 customer.setSalary(Double.parseDouble(txtsalary.getText()));
 
-                trueNumber = true;
+                truephone = true;
                 break;
             }
         }
 
-        if (trueNumber) {
+        if (truephone) {
+            clearData();
             new Alert(Alert.AlertType.INFORMATION, "Customer Updated Successfully").show();
         } else {
+            clearData();
             new Alert(Alert.AlertType.WARNING, "Customer Not Found").show();
         }
     }
@@ -111,6 +116,16 @@ else {
 
        }
 
+    }
+
+    public void clearData(){
+
+        txtid.clear();
+        txtname.clear();
+        txtemail.clear();
+        txtaddress.clear();
+        txtphone.clear();
+        txtsalary.clear();
     }
 
 }

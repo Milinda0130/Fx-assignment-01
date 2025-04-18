@@ -44,6 +44,14 @@ public class AddItemController {
 
         ItemDBConnection.getInstance().getDBList().add(item);
         new Alert(Alert.AlertType.INFORMATION,"Item Added Sucessfully").show();
+        clearData();
     }
 
+    public void clearData(){
+
+           txtcode.clear();
+           txtname.clear();
+           txtprice.clear();
+           txtqty.clear();
+    }
 }

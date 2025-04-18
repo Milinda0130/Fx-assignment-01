@@ -60,9 +60,18 @@ public class AddCustomerController   {
 
         new Alert(Alert.AlertType.INFORMATION, "Customer Added Succesfully").show();
 
+     clearData();
 
 
     }
 
+    public void clearData(){
 
+        txtid.clear();
+        txtname.clear();
+        txtemail.clear();
+        txtaddress.clear();
+        txtphone.clear();
+        txtsalary.clear();
+    }
 }
